@@ -29,9 +29,13 @@ class MainActivity : AppCompatActivity() {
             infoTextView.visibility = View.VISIBLE
 
             // Set info text
-            infoTextView.text = "Tip: \$${tip} Total: \$${total}"
+            infoTextView.text = "Tip: ${doubleToDollar(tip)} Total: ${doubleToDollar(total)}"
         }
+    }
 
+    fun doubleToDollar(number:Double):String
+    {
+        return "$" + String.format("%.2f",number)
     }
 
 }
