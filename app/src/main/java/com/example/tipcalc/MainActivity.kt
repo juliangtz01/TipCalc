@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         infoTextView.visibility = View.INVISIBLE
 
+        calculateButton.setOnClickListener{
+
+        }
+
     }
 
 }
