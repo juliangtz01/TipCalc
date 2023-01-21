@@ -14,7 +14,18 @@ class MainActivity : AppCompatActivity() {
         infoTextView.visibility = View.INVISIBLE
 
         calculateButton.setOnClickListener{
+            // Bill
+            val bill = billEditText.text.toString().toDouble()
+            // Tip Percentage
+            var tipPercentage = tipPercentageEditText.text.toString().toDouble()
+            // Tip
+            var tip = bill * tipPercentage
+            // Total
+            var total = bill + tip
+            // Make the infoText Visible
+            infoTextView.visibility = View.VISIBLE
 
+            // Set info text
         }
 
     }
