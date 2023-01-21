@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             infoTextView.visibility = View.VISIBLE
 
             // Set info text
-            infoTextView.text = "Tip: \$$tip Total: \$$total"
+            infoTextView.text = "Tip: \$${tip} Total: \$${total}"
         }
 
     }
